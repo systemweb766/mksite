@@ -1,0 +1,381 @@
+@charset "UTF-8";
+/*
+ALL PAGE
+ ----------------------------------------------------------------------------------------*/
+@font-face {
+  font-family:'Ahellya';
+  src:url('../font/ahellya.ttf') format('truetype'),
+  url("../font/ahellya.eot?")  format('eot'),
+  url("../font/ahellya.woff2") format('woff2'),
+  url("../font/ahellya.woff")  format('woff');
+}
+/*
+Share Style
+↓参照：http://css-happylife.com/archives/2007/0212_0008.php
+ */
+* {
+  margin:0;
+  padding:0;
+}
+body {
+  position:relative;
+  background:#fff url('../img/share/bg.gif') no-repeat left top;
+  font-family:Verdana, "ＭＳ Ｐゴシック", sans-serif;
+  font-size:80%;
+}
+html {
+  overflow-y:scroll;
+}
+img {
+  border:none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size:24px;
+}
+p, li, dt, dl {
+  line-height:1.6;
+}
+p {
+  margin:0 0 1em 0;
+}
+li {
+  list-style-type:none;
+}
+/*
+Link Color
+ */
+a {
+  color:#6666ff;
+  text-decoration:none;
+  &:visited {
+    color:#6f0000;
+  }
+  &:hover {
+    color:#0000ff;
+  }
+  &:active {
+    color:#ffff99;
+  }
+}
+/*
+↑参照：http://css-happylife.com/archives/2007/0212_0008.php
+ */
+.container-wrap {
+  position:relative;
+  display:block;
+  width:100vw;
+  min-height:100vh;
+  background-color:black;
+}
+/*
+Visual
+ */
+.visual-wrap {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  display:block;
+  width:100vw;
+  height:100vh;
+}
+/*
+Contents
+ */
+.contents-wrap {
+  position:relative;
+  display:block;
+  width:95%;
+  max-width:960px;
+  min-height:100vh;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:100px;
+  padding-bottom:100px;
+  background-color:transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.contents {
+  position:relative;
+  display:block;
+  /*指定した要素の親要素のコンテンツ幅に合わせる*/
+  height:-webkit-fill-available;
+  height:fill-available;
+}
+.ahellya {
+  font-family:'Ahellya';
+}
+.btn {
+  display:blcok;
+  width:180px;
+  height:40px;
+  margin:0 auto;
+  border:1px #0000ff solid;
+}
+/*
+ENTER PAGE
+ ----------------------------------------------------------------------------------------*/
+.enter-hero {
+  position: relative;
+  display:block;
+  width:100%;
+  height:100%;
+  background-repeat:no-repeat;
+  background-position:center;
+  -webkit-background-size:200%;
+  background-size:200%;
+}
+.enter .enter-logo {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-55px;
+  margin-left:-152.5px;
+}
+.enter .btn {
+  position:absolute;
+  top:70%;
+  left:50%;
+  margin-left:-90px;
+  &:hover {
+    background-color:rgba(30,30,30,.5);
+  }
+  &:active {
+    background-color:rgba(200,200,200,.5);
+  }
+  a {
+    display:block;
+    width:100%;
+    height:100%;
+    font-size: 24px;
+    text-align: center;
+    line-height:40px;
+  }
+}
+/* SVG ANIMATION */
+.svg-wrapper {
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  display:block;
+  width:100vw;
+  height:100vh;
+  background-color:rgba(0,0,0,1);
+  z-index:2;
+  -webkit-animation:SHOW 2s ease-in-out 5.5s forwards;
+  -o-animation:SHOW 2s ease-in-out 5.5s forwards;
+  animation:SHOW 2s ease-in-out 5.5s forwards;
+}
+.box {
+  display:block;
+  width:100%;
+  max-width:960px;
+  height:auto;
+  margin:0 auto;
+  padding-top:30vh;
+}
+svg {
+  display:block;
+  width:100%;
+  height:auto;
+  margin-top:0;
+  margin-left:auto;
+  margin-bottom:0;
+  margin-right:auto;
+  -webkit-animation:Small 2s ease-in-out 4s forwards;
+  -o-animation:Small 2s ease-in-out 4s forwards;
+  animation:Small 2s ease-in-out 4s forwards;
+}
+.circle{
+  fill:rgba(255,0,0,0);
+  stroke: rgba(255,255,255,1);
+  stroke-width:1;
+  stroke-dasharray:3000;
+  stroke-dashoffset:3000;
+  animation:Dash2 4.5s ease-in alternate forwards;
+  -webkit-animation:Dash2 4.5s ease-in 0s forwards;
+  -o-animation:Dash2 4.5s ease-in 0s forwards;
+  animation:Dash2 4.5s ease-in 0s forwards;
+}
+.path{
+  fill:none;
+  stroke:#FFFFFF;
+  stroke-width:1;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+  stroke-dasharray:3000;
+  stroke-dashoffset:3000;
+  animation:Dash 3s ease-in alternate forwards;
+  -webkit-animation:Dash 3s ease-in 2s forwards;
+  -o-animation:Dash 3s ease-in 2s forwards;
+  animation:Dash 3s ease-in 2s forwards;
+}
+/* svg-wrapper animation */
+@keyframes SHOW {
+  0%{background-color:rgba(0,0,0,1);}
+  95%{height:100vh;}
+  100% {background-color:rgba(0,0,0,0);height:0;}
+}
+@-webkit-keyframes SHOW {
+  0%{background-color:rgba(0,0,0,1);}
+  95%{height:100vh;}
+  100% {background-color:rgba(0,0,0,0);height:0;}
+}
+@-moz-keyframes SHOW {
+  0%{background-color:rgba(0,0,0,1);}
+  95%{height:100vh;}
+  100% {background-color:rgba(0,0,0,0);height:0;}
+}
+@-o-keyframes SHOW {
+  0%{background-color:rgba(0,0,0,1);}
+  95%{height:100vh;}
+  100% {background-color:rgba(0,0,0,0);height:0;}
+}
+@-ms-keyframes SHOW {
+  0%{background-color:rgba(0,0,0,1);}
+  95%{height:100vh;}
+  100% {background-color:rgba(0,0,0,0);height:0;}
+}
+/* SVG animation */
+@keyframes Small {
+  0%{width:100%;}
+  75% {width:100%;margin-top:0;}
+  100% {width:0;margin-top:20%;}
+}
+@-webkit-keyframes Small {
+  0%{width:100%;}
+  75% {width:100%;margin-top:0;}
+  100% {width:0;margin-top:20%;}
+}
+@-moz-keyframes Small {
+  0%{width:100%;}
+  75% {width:100%;margin-top:0;}
+  100% {width:0;margin-top:20%;}
+}
+@-o-keyframes Small {
+  0%{width:100%;}
+  75% {width:100%;margin-top:0;}
+  100% {width:0;margin-top:20%;}
+}
+@-ms-keyframes Small {
+  0%{width:100%;}
+  75% {width:100%;margin-top:0;}
+  100% {width:0;margin-top:20%;}
+}
+
+/* PATH ANIMATION */
+@keyframes Dash {
+  0%{stroke-dashoffset:3000;}
+  100% {stroke-dashoffset:0;}
+}
+@-webkit-keyframes Dash {
+  0%{stroke-dashoffset:3000;}
+  100% {stroke-dashoffset:0;}
+}
+@-moz-keyframes Dash {
+  0%{stroke-dashoffset:3000;}
+  100% {stroke-dashoffset:0;}
+}
+@-o-keyframes Dash {
+  0%{stroke-dashoffset:3000;}
+  100% {stroke-dashoffset:0;}
+}
+@-ms-keyframes Dash {
+  0%{stroke-dashoffset:3000;}
+  100% {stroke-dashoffset:0;}
+}
+/* CIRCLE ANIMATION */
+@keyframes Dash2 {
+  0%{
+    stroke-dashoffset:3000;
+  }
+  90% {
+    stroke-dashoffset:0;
+    stroke-width:1;
+    fill:rgba(255,0,0,0);
+  }
+  100% {
+    fill:rgba(255,0,0,1);
+    stroke-width:0;
+  }
+}
+@-webkit-keyframes Dash2 {
+  0%{
+    stroke-dashoffset:3000;
+  }
+  90% {
+    stroke-dashoffset:0;
+    stroke-width:1;
+    fill:rgba(255,0,0,0);
+  }
+  100% {
+    fill:rgba(255,0,0,1);
+    stroke-width:0;
+  }
+}
+@-moz-keyframes Dash2 {
+  0%{
+    stroke-dashoffset:3000;
+  }
+  90% {
+    stroke-dashoffset:0;
+    stroke-width:1;
+    fill:rgba(255,0,0,0);
+  }
+  100% {
+    fill:rgba(255,0,0,1);
+    stroke-width:0;
+  }
+}
+@-o-keyframes Dash2 {
+  0%{
+    stroke-dashoffset:3000;
+  }
+  90% {
+    stroke-dashoffset:0;
+    stroke-width:1;
+    fill:rgba(255,0,0,0);
+  }
+  100% {
+    fill:rgba(255,0,0,1);
+    stroke-width:0;
+  }
+}
+@-ms-keyframes Dash2 {
+  0%{
+    stroke-dashoffset:3000;
+  }
+  90% {
+    stroke-dashoffset:0;
+    stroke-width:1;
+    fill:rgba(255,0,0,0);
+  }
+  100% {
+    fill:rgba(255,0,0,1);
+    stroke-width:0;
+  }
+}
+/*
+TOP PAGE
+ ----------------------------------------------------------------------------------------*/
+/*
+PROFILE PAGE
+ ----------------------------------------------------------------------------------------*/
+/*
+PHOTO PAGE
+ ----------------------------------------------------------------------------------------*/
+/*
+PHOTO-DETAIL PAGE
+ ----------------------------------------------------------------------------------------*/
+/*
+TOPIC PAGE
+ ----------------------------------------------------------------------------------------*/
+/*
+WORKS PAGE
+ ----------------------------------------------------------------------------------------*/

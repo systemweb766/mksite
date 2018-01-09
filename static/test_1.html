@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body {
+
+        }
+        .svg-wrapper {
+            position:relative;
+            width:100vw;
+            height:100vh;
+            background-color:rgba(0,0,0,1);
+            -webkit-animation:SHOW 2s ease-in-out 4s forwards;
+            -o-animation:SHOW 2s ease-in-out 4s forwards;
+            animation:SHOW 2s ease-in-out 4s forwards;
+        }
+        .box {
+            display:block;
+            width:960px;
+            height:auto;
+            margin:0 auto;
+            padding-top:30vh;
+        }
+        svg {
+            display:block;
+            width:100%;
+            height:auto;
+            margin:0 auto;
+            -webkit-animation:Small 2s ease-in-out 4s forwards;
+            -o-animation:Small 2s ease-in-out 4s forwards;
+            animation:Small 2s ease-in-out 4s forwards;
+        }
+        .circle{
+            fill:rgba(255,0,0,0);
+            stroke: rgba(255,255,255,1);
+            stroke-width:1;
+            stroke-dasharray:3000;
+            stroke-dashoffset:3000;
+            animation:Dash2 4.5s ease-in alternate forwards;
+            -webkit-animation:Dash2 4.5s ease-in 0s forwards;
+            -o-animation:Dash2 4.5s ease-in 0s forwards;
+            animation:Dash2 4.5s ease-in 0s forwards;
+        }
+        .path{
+            fill:none;
+            stroke:#FFFFFF;
+            stroke-width:1;
+            stroke-linecap:round;
+            stroke-linejoin:round;
+            stroke-miterlimit:10;
+            stroke-dasharray:3000;
+            stroke-dashoffset:3000;
+            animation:Dash 3s ease-in alternate forwards;
+            -webkit-animation:Dash 3s ease-in 2s forwards;
+            -o-animation:Dash 3s ease-in 2s forwards;
+            animation:Dash 3s ease-in 2s forwards;
+        }
+        /* svg-wrapper animation */
+        @keyframes SHOW {
+            0%{background-color:rgba(0,0,0,1);}
+            100% {background-color:rgba(0,0,0,0);}
+        }
+        @-webkit-keyframes SHOW {
+            0%{background-color:rgba(0,0,0,1);}
+            100% {background-color:rgba(0,0,0,0);}
+        }
+        @-moz-keyframes SHOW {
+            0%{background-color:rgba(0,0,0,1);}
+            100% {background-color:rgba(0,0,0,0);}
+        }
+        @-o-keyframes SHOW {
+            0%{background-color:rgba(0,0,0,1);}
+            100% {background-color:rgba(0,0,0,0);}
+        }
+        @-ms-keyframes SHOW {
+            0%{background-color:rgba(0,0,0,1);}
+            100% {background-color:rgba(0,0,0,0);}
+        }
+        /* SVG animation */
+        @keyframes Small {
+            0%{width:100%;}
+            75% {width:100%;}
+            100% {width:70%;}
+        }
+        @-webkit-keyframes Small {
+            0%{width:100%;}
+            75% {width:100%;}
+            100% {width:70%;}
+        }
+        @-moz-keyframes Small {
+            0%{width:100%;}
+            75% {width:100%;}
+            100% {width:70%;}
+        }
+        @-o-keyframes Small {
+            0%{width:100%;}
+            75% {width:100%;}
+            100% {width:70%;}
+        }
+        @-ms-keyframes Small {
+            0%{width:100%;}
+            75% {width:100%;}
+            100% {width:70%;}
+        }
+
+        /* PATH ANIMATION */
+        @keyframes Dash {
+            0%{stroke-dashoffset:3000;}
+            100% {stroke-dashoffset:0;}
+        }
+        @-webkit-keyframes Dash {
+            0%{stroke-dashoffset:3000;}
+            100% {stroke-dashoffset:0;}
+        }
+        @-moz-keyframes Dash {
+            0%{stroke-dashoffset:3000;}
+            100% {stroke-dashoffset:0;}
+        }
+        @-o-keyframes Dash {
+            0%{stroke-dashoffset:3000;}
+            100% {stroke-dashoffset:0;}
+        }
+        @-ms-keyframes Dash {
+            0%{stroke-dashoffset:3000;}
+            100% {stroke-dashoffset:0;}
+        }
+        /* CIRCLE ANIMATION */
+        @keyframes Dash2 {
+            0%{
+                stroke-dashoffset:3000;
+            }
+            90% {
+                stroke-dashoffset:0;
+                stroke-width:1;
+                fill:rgba(255,0,0,0);
+            }
+            100% {
+                fill:rgba(255,0,0,1);
+                stroke-width:0;
+            }
+        }
+        @-webkit-keyframes Dash2 {
+            0%{
+                stroke-dashoffset:3000;
+            }
+            90% {
+                stroke-dashoffset:0;
+                stroke-width:1;
+                fill:rgba(255,0,0,0);
+            }
+            100% {
+                fill:rgba(255,0,0,1);
+                stroke-width:0;
+            }
+        }
+        @-moz-keyframes Dash2 {
+            0%{
+                stroke-dashoffset:3000;
+            }
+            90% {
+                stroke-dashoffset:0;
+                stroke-width:1;
+                fill:rgba(255,0,0,0);
+            }
+            100% {
+                fill:rgba(255,0,0,1);
+                stroke-width:0;
+            }
+        }
+        @-o-keyframes Dash2 {
+            0%{
+                stroke-dashoffset:3000;
+            }
+            90% {
+                stroke-dashoffset:0;
+                stroke-width:1;
+                fill:rgba(255,0,0,0);
+            }
+            100% {
+                fill:rgba(255,0,0,1);
+                stroke-width:0;
+            }
+        }
+        @-ms-keyframes Dash2 {
+            0%{
+                stroke-dashoffset:3000;
+            }
+            90% {
+                stroke-dashoffset:0;
+                stroke-width:1;
+                fill:rgba(255,0,0,0);
+            }
+            100% {
+                fill:rgba(255,0,0,1);
+                stroke-width:0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="svg-wrapper">
+    <div class="box">
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 203.3 84.3" style="enable-background:new 0 0 203.3 84.3;" xml:space="preserve">
+
+            <g id="lyr1">
+                <circle class="circle" cx="101.9" cy="42.3" r="39"/>
+                <path class="path" d="M4.1,38.4c2-8,16.5-13.5,17.5-10.5s-8,23-9,24s16-26,20-22s-4,17-5,19s14-19,18-17s-12,21-7,26"/>
+                <path class="path" d="M50.6,42.9c-2,0-9,7-4,10c2,1,8-8,5-10s1,6,7,0s5-12,7-12s-12,16-10,22"/>
+                <path class="path" d="M57.6,38.9c3,1,10-3,10-1s-1,2-1,2"/>
+                <path class="path" d="M69.6,41.9c-2,0-11,5-6,9s9-8,7-9s-3,0-2,2s5,1,7,0"/>
+                <path class="path" d="M71.6,38.9c0-3,10-13,16-12s-8,20-8,25"/>
+                <path class="path" d="M102.6,26.9c-1,3-9.5,13.8-18,15c4,6,5,14,11,15c2,1,2,0,2,0"/>
+                <path class="path" d="M102.6,42.9c-2-2-12,5-9,8s11-5,11-9c-1,5-5,11,0,10s8-9,8-10c-2,5-5,11-2,10s8-7,8-9c0,4-1,8,2,9s6-10,4-13"
+                    />
+                <path class="path" d="M136.6,42.9c-4-3-11,5-10,8s13-7,12-9c-3,4-6,10-2,9s10-7,10-11c-2,6-5,12-4,12c2-3,6-11,8-10s1,8,0,10
+                    c2-5,7-11,9-9c0,4-3,9,0,9s10-12,14-10c-6,0-14,10-9,10s12-8,12-9c-2,4-7,12,0,8s10-19,14-20c-2,3-11,14-10,22"/>
+                <path class="path" d="M181.6,38.9c1,1,11-4,11,0"/>
+                <path class="path" d="M195.6,42.9c-3-1-8,2-10,8c-1,4,10-4,12-8c-3,6-4,11,2,6"/>
+            </g>
+        </svg>
+    </div>
+</div>
+<script type="text/javascript" >
+</script>
+</body>
+</html>

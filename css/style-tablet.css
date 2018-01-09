@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/*
+FOR TABLET
+ */
+@media only screen and (min-width:765px) and (max-width:1024px) {
+	.container-wrap {
+    width:100vw;
+    min-height:100vh;
+}
+/*
+ENTER PAGE
+ ----------------------------------------------------------------------------------------*/
+.enter-hero {
+    -webkit-background-size:cover;
+    background-size:cover;
+}
+
+/*
+TOP PAGE
+ ----------------------------------------------------------------------------------------*/
+#header {
+	width:960px;
+	height:44px;
+	/*margin-top:100px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:70px;*/
+	margin:100px auto 70px;
+}
+.container-wrap-wrap {
+	display:-webkit-flex;
+	display:flex;
+	max-width:960px;
+}
+#navigation {
+	/*display:none;*/
+	width:30.2%;
+	max-width:290px;
+	font-size:14px;
+	margin:0 10px 0 5px;
+}
+#container {
+	width:67.7%;
+	max-width:650px;
+	margin:0 5px 0 0;
+}
+
+/*
+PROFILE PAGE
+ ----------------------------------------------------------------------------------------*/
+/*
+PHOTO PAGE
+ ----------------------------------------------------------------------------------------*/
+/*
+PHOTO-DETAIL PAGE
+ ----------------------------------------------------------------------------------------*/
+/*
+TOPIC PAGE
+ ----------------------------------------------------------------------------------------*/
+/*
+WORKS PAGE
+ ----------------------------------------------------------------------------------------*/
+}
