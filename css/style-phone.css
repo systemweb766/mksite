@@ -65,15 +65,15 @@ a:active {
 /*
 ↑参照：http://css-happylife.com/archives/2007/0212_0008.php
  */
- 
- 
+
+
  /******************************
   Utility
   *****************************/
 .u-mt40 {
   margin-top:40px;
 }
- 
+
 .container-wrap {
     position:relative;
     display:block;
@@ -239,10 +239,14 @@ Contents
 footer
 *******************************************/
 #footer {
+  width:95%;
+  max-width:960px;
+  margin:0 auto;
 	border-top: 3px solid #fff;
 	text-align:right;
 }
-#footer small.copyright {	
+#footer small.copyright {
+  padding-right:5px;
 	line-height:2;
 	font-size:11px;
 	color:#ccc;

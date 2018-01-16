@@ -3,7 +3,7 @@
 FOR PC
  */
 @media only screen and (min-width:1025px) {
-	.container-wrap {
+	body.enter .container-wrap {
     width:100vw;
     min-height:100vh;
 }
@@ -25,10 +25,6 @@ TOP PAGE
 	align-items: baseline;
 	width:960px;
 	height:44px;
-	/*margin-top:100px;
-	margin-left:auto;
-	margin-right:auto;
-	margin-bottom:70px;*/
 	margin:100px auto 70px;
 }
 #header >h1, #header > p {
@@ -39,7 +35,7 @@ TOP PAGE
 	line-height:1;
 }
 #header > h1 {
-	margin:0 20px 0 0;
+	margin:0 20px 0 5px;
 }
 #header > p {
 	margin:0;
@@ -53,15 +49,39 @@ TOP PAGE
 	/*display:none;*/
 	width:30.2%;
 	max-width:290px;
+	padding:0;
 	font-size:14px;
 	margin:0 10px 0 5px;
+	border-bottom: none;
+}
+#navigation #nav-open {
+	display:none;
+}
+#nav-content {
+	position:inherit;
+	padding:0;
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);
 }
 #container {
 	width:67.7%;
 	max-width:650px;
 	margin:0 5px 0 0;
 }
-
+#footer {
+	width:100%;
+	margin-bottom:20px;
+	border:none;
+}
+.top-contents {
+	flex-direction:row;
+}
+.tcBox {
+	width:290px;
+}
+.news {
+	margin-top:0;
+}
 /*
 PROFILE PAGE
  ----------------------------------------------------------------------------------------*/
