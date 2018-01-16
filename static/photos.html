@@ -16,34 +16,50 @@
         <p>Welcome to Moto Kawamata's website.</p>
     </header>
     <div class="container-wrap-wrap">
-		<aside id="navigation">
-			<nav>
-				<ul>
-					<li>
-						<a href="./top.html">HOME</a>
-					</li>
-					<li>
-						<a href="./profile.html">Profile</a>
-					</li>
-					<li>
-						<a href="./photos.html">Photos</a>
-					</li>
-					<li>
-						<a href="./works.html">Works</a>
-					</li>
-					<li>
-						<a href="./topics.html">Topic</a>
-					</li>
-				</ul>
-			</nav>
-		</aside>
+      <aside id="navigation">
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">
+            <nav>
+              <ul>
+                <li>
+                  <a href="./top.html">HOME</a>
+                </li>
+                <li>
+                  <a href="./profile.html">Profile</a>
+                </li>
+                <li>
+                  <a href="./photos.html">Photos</a>
+                </li>
+                <li>
+                  <a href="./works.html">Works</a>
+                </li>
+                <li>
+                  <a href="./topics.html">Topic</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+  		</aside>
 		<section id="container">
 			<div class="hero-wrap">
-				<!--<div class="top-hero" style="background-image:url('../img/top/top_hero.jpg');"></div>-->
+				<div class="top-hero" style="background-image:url('../img/top/top_hero.jpg');"></div>
 			</div>
 			<div class="contents-wrap">
-				<section class="contents top-contents">
-					<p style="color:#fff; font-size:27px; font-weight:bold;">PHOTOS</p>
+        <section class="contents secondary-contents">
+					<section class="photos-sect scndBox">
+              <h2>PHOTOS</h2>
+              <div class="photos-list ">
+                <ul>
+                  <li><a href="./photos-detail.html">南極調査</a></li>
+                  <li><a href="./photos-detail.html">白鳳丸航海</a></li>
+                  <li><a href="./photos-detail.html">国際学会</a></li>
+                </ul>
+              </div>
+          </section>
 				</section>
 			</div>
 		</section>

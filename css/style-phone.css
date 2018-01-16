@@ -39,7 +39,7 @@ p, li, dt, dl {
 p {
     margin:0 0 1em 0;
 }
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, li {
     color:#ffffff;
 }
 li {
@@ -139,13 +139,13 @@ Contents
   margin: 0 auto 20px;
 	font-size:16px;
 }
-#navigation a, .news ul li a {
+#navigation a, .news ul li a, .photos-list ul li a {
 	position:relative;
 	display:block;
 	padding-left:10px;
 	color:#ffffff;
 }
-#navigation a::before {
+#navigation a::before, .photos-list ul li a::before {
 	display:block;
 	content:"";
 	position:absolute;
@@ -158,11 +158,11 @@ Contents
 	background-position:center center;
 	background-size:contain;
 }
-#navigation li, .news ul li {
+#navigation li, .news ul li, .photos-list ul li {
 	display:block;
 	margin-bottom: 25px;
 }
-#navigation li:hover > a, .news ul li a:hover {
+#navigation li:hover > a, .news ul li a:hover, .photos-list ul li a:hover {
 	color:#ffee00;
 }
 #nav-drawer{
@@ -569,9 +569,7 @@ TOP PAGE
 .intro > h2, .news > h2 {
 	margin-bottom:32px;
 }
-.news ul li a {
-	color:#ffffff;
-}
+
 /*
 PROFILE PAGE
  ----------------------------------------------------------------------------------------*/

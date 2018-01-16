@@ -16,34 +16,75 @@
         <p>Welcome to Moto Kawamata's website.</p>
     </header>
     <div class="container-wrap-wrap">
-		<aside id="navigation">
-			<nav>
-				<ul>
-					<li>
-						<a href="./top.html">HOME</a>
-					</li>
-					<li>
-						<a href="./profile.html">Profile</a>
-					</li>
-					<li>
-						<a href="./photos.html">Photos</a>
-					</li>
-					<li>
-						<a href="./works.html">Works</a>
-					</li>
-					<li>
-						<a href="./topics.html">Topic</a>
-					</li>
-				</ul>
-			</nav>
-		</aside>
+      <aside id="navigation">
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">
+            <nav>
+              <ul>
+                <li>
+                  <a href="./top.html">HOME</a>
+                </li>
+                <li>
+                  <a href="./profile.html">Profile</a>
+                </li>
+                <li>
+                  <a href="./photos.html">Photos</a>
+                </li>
+                <li>
+                  <a href="./works.html">Works</a>
+                </li>
+                <li>
+                  <a href="./topics.html">Topic</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+  		</aside>
 		<section id="container">
 			<div class="hero-wrap">
-				<!--<div class="top-hero" style="background-image:url('../img/top/top_hero.jpg');"></div>-->
+				<div class="top-hero" style="background-image:url('../img/top/top_hero.jpg');"></div>
 			</div>
 			<div class="contents-wrap">
-				<section class="contents top-contents">
-					<p style="color:#fff; font-size:27px; font-weight:bold;">PROFILE</p>
+				<section class="contents secondary-contents">
+					<section class="profile-sect scndBox">
+              <h2>川又基人</h2>
+              <p><img src="../img/profile/name.img" alt="かわまたもと"/></p>
+              <p>kawamata.moto@nipr.ac.jp</p>
+              <p>総合研究大学院大学<br/>複合科学研究科極域科学専攻5年一貫博士課程</p>
+          </section>
+					<section class="profile-sect scndBox">
+              <h2>研究内容</h2>
+              <p>テーマ：東南極宗谷海岸露岩域における氷床変動史の復元</p>
+              <p>地形・地質学的な野外調査を基本とし、室内実験（宇宙線生成核種を用いた表面露出年代測定・南極湖沼コアの年代測定）
+                や地形解析（UAVを用いた広範囲の数値地形情報の取得）を組み合わせた包括的な議論を基に、南極氷床変動のメカニズムに迫ることを目標としています。</p>
+          </section>
+					<section class="profile-sect scndBox">
+              <h2>略歴</h2>
+              <div class="ryakureki ">
+                <ul>
+                  <li>03/2011：水城高校　卒業</li>
+                  <li>04/2011：茨城大学　理学部理学科　地球環境科学コース　入学</li>
+                  <li>03/2015：茨城大学　理学部理学科　地球環境科学コース　卒業</li>
+                  <li>04/2015：総合研究大学院大学　複合科学研究科　極域科学専攻　入学</li>
+                </ul>
+              </div>
+              <div class="">
+                <p class="img"><img src="../img/profile/ryakureki.img" alt="作業の様子"/></p>
+              </div>
+          </section>
+					<section class="profile-sect scndBox">
+              <h2>所属学会</h2>
+              <div class="syozokugakkai ">
+                <ul>
+                  <li>日本地球惑星科学連合</li>
+                  <li>日本地質学会</li>
+                </ul>
+              </div>
+          </section>
 				</section>
 			</div>
 		</section>
