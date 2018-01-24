@@ -85,6 +85,30 @@ TOP PAGE
 /*
 PROFILE PAGE
  ----------------------------------------------------------------------------------------*/
+ .heroTxtBox {
+	position:absolute;
+	display:block;
+	width:350px;
+	height:auto;
+	left:60px;
+	bottom:50px;
+	margin-top:0;
+ }
+ .scndBox {
+   margin-bottom:100px;
+ }
+ .ryakureki-wrap {
+	 display:-webkit-flex;
+	 display:flex;
+	 justify-content:space-between;
+	 flex-direction:row;
+ }
+ .rightBox {
+	 display:block;
+	 width:48%;
+	 margin-top:10px;
+	 margin-left:15px;
+ }
 /*
 PHOTO PAGE
  ----------------------------------------------------------------------------------------*/

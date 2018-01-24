@@ -2,6 +2,10 @@
 /*
 ALL PAGE
  ----------------------------------------------------------------------------------------*/
+/*
+import
+----------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/earlyaccess/notosansjp.css');
 @font-face {
     font-family:'Ahellya';
     src:url('../font/ahellya.ttf') format('truetype'),
@@ -21,7 +25,7 @@ Share Style
 body {
     position:relative;
     background:#fff url('../img/share/bg.gif') no-repeat left top;
-    font-family:Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    font-family:Verdana, 'Noto Sans JP', "ＭＳ Ｐゴシック", sans-serif;
     font-size:80%;
 }
 html {
@@ -30,9 +34,9 @@ html {
 img {
     border:none;
 }
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
     font-size:24px;
-}
+} */
 p, li, dt, dl {
     line-height:1.6;
 }
@@ -73,10 +77,23 @@ a:active {
 .u-mt40 {
   margin-top:40px;
 }
-
+.u-mt56 {
+  margin-top:56px;
+}
+.u-mb1em {
+  margin-bottom:1em;
+}
+.u-mb12 {
+  margin-bottom:12px;
+}
+.u-f24px {
+  font-size:24px;
+  font-weight:400;
+}
 .container-wrap {
     position:relative;
     display:block;
+    min-height:100vh;
     background-color:black;
 	overflow:hidden;
 }
@@ -121,6 +138,11 @@ Contents
     height:40px;
     margin:0 auto;
     border:1px #FC0017 solid;
+}
+.img > img {
+  width:100%;
+  max-width:100%;
+  height:auto;
 }
 /*
  JS Class
@@ -573,6 +595,28 @@ TOP PAGE
 /*
 PROFILE PAGE
  ----------------------------------------------------------------------------------------*/
+ .scndBox {
+   margin-bottom:50px;
+ }
+ .hero-wrap {
+   position:relative;
+ }
+ .heroTxtBox {
+   position:relative;
+   margin-top:56px;
+ }
+ .ryakureki-wrap {
+   display:-webkit-flex;
+   display:flex;
+   justify-content:space-between;
+   flex-direction:column;
+ }
+ .rightBox {
+   display:block;
+   width:100%;
+   margin-top:10px;
+   margin-left:0;
+ }
 /*
 PHOTO PAGE
  ----------------------------------------------------------------------------------------*/
