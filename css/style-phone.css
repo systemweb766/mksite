@@ -284,6 +284,11 @@ ENTER PAGE
 .enter .contents-wrap {
     min-height:100vh;
 }
+.enter .contents {
+  /*指定した要素の親要素のコンテンツ幅に合わせる*/
+   height:-webkit-fill-available;
+   height:fill-available;
+}
 .enter-hero {
     position: relative;
     display:block;
@@ -303,7 +308,7 @@ ENTER PAGE
 }
 .enter .btn {
     position:absolute;
-    top:70%;
+    top:60%;
     left:50%;
     margin-left:-90px;
 	transition:all .3s ease-in-out;
