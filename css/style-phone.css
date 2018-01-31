@@ -624,6 +624,9 @@ PROFILE PAGE
  .heroTxtBox {
    position:relative;
    margin-top:56px;
+   opacity:0;
+   -webkit-transform:translateX(105%);
+   transform:translateX(105%);
  }
  .ryakureki-wrap {
    display:-webkit-flex;
@@ -643,7 +646,6 @@ PHOTO PAGE
  .heroTxtBox.photos-sect {
    position:absolute;
    display:block;
-   opacity:0;
    width:350px;
    height:auto;
    left:60px;
@@ -652,8 +654,6 @@ PHOTO PAGE
    margin-top:0;
    background-color:rgba(245,180,83,1);
    padding:1em;
-   -webkit-transform:translateX(105%);
-   transform:translateX(105%);
  }
  .photos-sect-open {
    -webkit-transform:translateX(0)!important;

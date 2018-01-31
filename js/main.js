@@ -45,18 +45,18 @@
 document.onreadystatechange = function() {
   if(document.readyState == "complete") {
     var hero = 'hero';
-    var id2 = 'PSection';
+    var heroTxtBox = 'heroTxtBox';
     var target1 = document.getElementsByClassName(hero)[0];
-    var target2 = document.getElementById(id2);
+    var target2 = document.getElementsByClassName(heroTxtBox)[0];
     if(target1 && target2) {
       TweenMax.to('.' + hero, 1.5, {
         opacity: 1,
         ease:Expo.easeInOut,
-        onComplete: TweenMax.to('#' + id2, 2.5, {
+        onComplete: TweenMax.to('.' + heroTxtBox, 2, {
           opacity:1,
           x:0,
           delay: 1.5,
-          ease:Expo.easeInOut
+          ease:Power2.easeInOut
         })
       });
     }
