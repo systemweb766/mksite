@@ -75,20 +75,33 @@ a:active {
   Utility
   *****************************/
 .u-mt40 {
-  margin-top:40px;
+  margin-top:40px!important;
 }
 .u-mt56 {
-  margin-top:56px;
+  margin-top:56px!important;
+}
+.u-mb0 {
+  margin-bottom:0!important;
 }
 .u-mb1em {
-  margin-bottom:1em;
+  margin-bottom:1em!important;
 }
 .u-mb12 {
-  margin-bottom:12px;
+  margin-bottom:12px!important;
+}
+.u-mb25 {
+	margin-bottom: 25px!important;
+}
+.u-mb32 {
+	margin-bottom:32px!important;
+}
+.u-f16px {
+  font-size:16px!important;
+  font-weight:normal!important;
 }
 .u-f24px {
-  font-size:24px;
-  font-weight:400;
+  font-size:24px!important;
+  font-weight:400!important;
 }
 .container-wrap {
     position:relative;
@@ -150,7 +163,6 @@ Contents
 .is-noOpacity {opacity:1;}
 .is-Open {display:block;}
 .is-none {display:none;}
-
 /*
   ナビゲーションドロワー×ハンバーガーメニュー
   */
@@ -180,11 +192,11 @@ Contents
 	background-position:center center;
 	background-size:contain;
 }
-#navigation li, .news ul li, .photos-list ul li {
+#navigation li{
 	display:block;
-	margin-bottom: 25px;
+  margin-bottom:25px;
 }
-#navigation li:hover > a, .news ul li a:hover, .photos-list ul li a:hover {
+#navigation li:hover > a, .news ul li a:hover {
 	color:#ffee00;
 }
 #nav-drawer{
@@ -563,7 +575,8 @@ TOP PAGE
 	width:95%;
 	margin:0 auto;
 }
-.top-hero {
+.hero {
+  opacity:0;
 	width:100%;
 	height:400px;
 	margin:0 auto;
@@ -593,10 +606,12 @@ TOP PAGE
 .intro > h2, .intro p  {
 	color:#000000;
 }
-.intro > h2, .news > h2 {
-	margin-bottom:32px;
+.news ul li {
+  margin-bottom:25px;
 }
-
+.news ul li:last-child {
+	margin-bottom: 0;
+}
 /*
 PROFILE PAGE
  ----------------------------------------------------------------------------------------*/
@@ -625,6 +640,31 @@ PROFILE PAGE
 /*
 PHOTO PAGE
  ----------------------------------------------------------------------------------------*/
+ .heroTxtBox.photos-sect {
+   position:relative;
+   display:block;
+   opacity:0;
+   width:350px;
+   height:auto;
+   /*left:60px;
+   bottom:-50px;*/
+   z-index:80;
+   margin-top:0;
+   background-color:rgba(245,180,83,1);
+   padding:1em;
+   -webkit-transform:translateX(105%);
+   transform:translateX(105%);
+ }
+ .photos-sect-open {
+   -webkit-transform:translateX(0)!important;
+   transform:translateX(0)!important;
+ }
+ .photos-list ul li  {
+   display:block;
+ }
+ .photos-list ul li a:hover {
+
+ }
 /*
 PHOTO-DETAIL PAGE
  ----------------------------------------------------------------------------------------*/
