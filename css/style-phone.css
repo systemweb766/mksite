@@ -641,13 +641,13 @@ PROFILE PAGE
 PHOTO PAGE
  ----------------------------------------------------------------------------------------*/
  .heroTxtBox.photos-sect {
-   position:relative;
+   position:absolute;
    display:block;
    opacity:0;
    width:350px;
    height:auto;
-   /*left:60px;
-   bottom:-50px;*/
+   left:60px;
+   bottom:-50px;
    z-index:80;
    margin-top:0;
    background-color:rgba(245,180,83,1);
