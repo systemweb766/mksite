@@ -646,7 +646,7 @@ PHOTO PAGE
  .heroTxtBox.photos-sect {
    position:absolute;
    display:block;
-   width:350px;
+   width:105%;
    height:auto;
    left:60px;
    bottom:-50px;
@@ -663,7 +663,7 @@ PHOTO PAGE
    display:block;
  }
  .photos-list ul li a:hover {
-
+   color:#ffee00;
  }
 /*
 PHOTO-DETAIL PAGE
