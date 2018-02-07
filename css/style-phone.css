@@ -611,8 +611,11 @@ TOP PAGE
 	padding:60px 30px;
 }
 .intro {
+  opacity:0;
 	background:#ffffff;
 	margin-top:-60px;
+  -webkit-transform:translateX(105%);
+  transform:translateX(105%);
 }
 .intro > h2, .intro p  {
 	color:#000000;
@@ -685,3 +688,15 @@ TOPIC PAGE
 /*
 WORKS PAGE
  ----------------------------------------------------------------------------------------*/
+ .heroTxtBox.works-sect {
+   position:absolute;
+   display:block;
+   width:105%;
+   height:auto;
+   left:60px;
+   bottom:-50px;
+   z-index:80;
+   margin-top:0;
+   background-color:rgba(245,180,83,1);
+   padding:1em;
+ }
