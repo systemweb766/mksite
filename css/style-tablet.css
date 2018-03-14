@@ -72,10 +72,26 @@ PHOTO PAGE
 /*
 PHOTO-DETAIL PAGE
  ----------------------------------------------------------------------------------------*/
+ .heroTxtBox.photos-sect-detail {
+	 background-color:rgba(245,180,83,1);
+ }
 /*
 TOPIC PAGE
  ----------------------------------------------------------------------------------------*/
 /*
 WORKS PAGE
  ----------------------------------------------------------------------------------------*/
+ .heroTxtBox.works-sect {
+	padding-top:195px;
+ }
+ .scndBox.works-sect h2 {
+	margin-bottom:24px;
+ }
+ .scndBox.works-sect p,
+ .scndBox.works-sect ul li {
+	text-indent:1em;
+ }
+ .scndBox.works-sect ul li {
+	margin-bottom:1em;
+ }
 }
